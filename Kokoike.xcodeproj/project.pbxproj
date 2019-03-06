@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20F87A570C595CD216FE2E6E /* Pods_Kokoike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CB86DEA1C67FB78D1BF83A /* Pods_Kokoike.framework */; };
+		3A356FB51D11CAC86E9350D1 /* Pods_KokoikeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C4CB26A661750BBF42452A /* Pods_KokoikeTests.framework */; };
+		46CEF97D38C8FB0539F5E66A /* Pods_KokoikeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E31807D9891C1C887A3EEF7 /* Pods_KokoikeUITests.framework */; };
 		51597D52222062B80028C89A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51597D51222062B80028C89A /* AppDelegate.swift */; };
 		51597D54222062B80028C89A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51597D53222062B80028C89A /* ViewController.swift */; };
 		51597D57222062B80028C89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51597D55222062B80028C89A /* Main.storyboard */; };
@@ -14,6 +17,20 @@
 		51597D5C222062BD0028C89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51597D5A222062BD0028C89A /* LaunchScreen.storyboard */; };
 		51597D67222062BE0028C89A /* KokoikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51597D66222062BE0028C89A /* KokoikeTests.swift */; };
 		51597D72222062BE0028C89A /* KokoikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51597D71222062BE0028C89A /* KokoikeUITests.swift */; };
+		51597D80222413520028C89A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51597D7F222413510028C89A /* LoginViewController.swift */; };
+		51597D822224193C0028C89A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51597D812224193C0028C89A /* RegisterViewController.swift */; };
+		51597D84222484320028C89A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51597D83222484320028C89A /* DataController.swift */; };
+		51597D8D222487260028C89A /* KokoikeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51597D8B222487260028C89A /* KokoikeModel.xcdatamodeld */; };
+		51597D902224894D0028C89A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51597D8F2224894C0028C89A /* Location.swift */; };
+		51597D932224A00E0028C89A /* NewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51597D922224A00E0028C89A /* NewLocationViewController.swift */; };
+		51662A22222FD2C2007AFB15 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51662A21222FD2C2007AFB15 /* Constants.swift */; };
+		51662A28222FE096007AFB15 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51662A26222FE096007AFB15 /* SearchResultCell.swift */; };
+		51662A29222FE096007AFB15 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51662A27222FE096007AFB15 /* SearchResultCell.xib */; };
+		51662A2C222FE433007AFB15 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51662A2B222FE433007AFB15 /* UIImageViewExtension.swift */; };
+		51662A2E222FF574007AFB15 /* MapVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51662A2D222FF573007AFB15 /* MapVIewController.swift */; };
+		517F579C22280FBF00C19653 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F579B22280FBF00C19653 /* API.swift */; };
+		517F579E22281C3D00C19653 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F579D22281C3D00C19653 /* DetailViewController.swift */; };
+		517F57A02228432A00C19653 /* NewLocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F579F2228432A00C19653 /* NewLocationDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3321DB33E48C9232D2C451EE /* Pods-KokoikeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KokoikeTests.release.xcconfig"; path = "Target Support Files/Pods-KokoikeTests/Pods-KokoikeTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E31807D9891C1C887A3EEF7 /* Pods_KokoikeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KokoikeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51597D4E222062B80028C89A /* Kokoike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kokoike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51597D51222062B80028C89A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51597D53222062B80028C89A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +66,27 @@
 		51597D6D222062BE0028C89A /* KokoikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KokoikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51597D71222062BE0028C89A /* KokoikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KokoikeUITests.swift; sourceTree = "<group>"; };
 		51597D73222062BE0028C89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51597D7F222413510028C89A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		51597D812224193C0028C89A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		51597D83222484320028C89A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		51597D8C222487260028C89A /* KokoikeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KokoikeModel.xcdatamodel; sourceTree = "<group>"; };
+		51597D8F2224894C0028C89A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		51597D922224A00E0028C89A /* NewLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocationViewController.swift; sourceTree = "<group>"; };
+		51662A21222FD2C2007AFB15 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		51662A26222FE096007AFB15 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		51662A27222FE096007AFB15 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
+		51662A2B222FE433007AFB15 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		51662A2D222FF573007AFB15 /* MapVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVIewController.swift; sourceTree = "<group>"; };
+		517F579B22280FBF00C19653 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = SOURCE_ROOT; };
+		517F579D22281C3D00C19653 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		517F579F2228432A00C19653 /* NewLocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocationDetailViewController.swift; sourceTree = "<group>"; };
+		5D91D28A545943C34E64DABB /* Pods-KokoikeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KokoikeTests.debug.xcconfig"; path = "Target Support Files/Pods-KokoikeTests/Pods-KokoikeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9811392708B05AB521F7D04E /* Pods-Kokoike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kokoike.release.xcconfig"; path = "Target Support Files/Pods-Kokoike/Pods-Kokoike.release.xcconfig"; sourceTree = "<group>"; };
+		AB300465589BF068560A8C7F /* Pods-Kokoike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kokoike.debug.xcconfig"; path = "Target Support Files/Pods-Kokoike/Pods-Kokoike.debug.xcconfig"; sourceTree = "<group>"; };
+		E5C4CB26A661750BBF42452A /* Pods_KokoikeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KokoikeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F339D6CEEFEE9639F2B66F47 /* Pods-KokoikeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KokoikeUITests.release.xcconfig"; path = "Target Support Files/Pods-KokoikeUITests/Pods-KokoikeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F8CB86DEA1C67FB78D1BF83A /* Pods_Kokoike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kokoike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF569D8348461D267B0E675 /* Pods-KokoikeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KokoikeUITests.debug.xcconfig"; path = "Target Support Files/Pods-KokoikeUITests/Pods-KokoikeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F87A570C595CD216FE2E6E /* Pods_Kokoike.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A356FB51D11CAC86E9350D1 /* Pods_KokoikeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46CEF97D38C8FB0539F5E66A /* Pods_KokoikeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +124,8 @@
 				51597D65222062BE0028C89A /* KokoikeTests */,
 				51597D70222062BE0028C89A /* KokoikeUITests */,
 				51597D4F222062B80028C89A /* Products */,
+				9C7F5469ADEBD112D1FCAD81 /* Pods */,
+				7CB2FC30290601FA9E1556B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +142,18 @@
 		51597D50222062B80028C89A /* Kokoike */ = {
 			isa = PBXGroup;
 			children = (
+				51662A2A222FE422007AFB15 /* Extensions */,
+				51662A23222FDF85007AFB15 /* Cells */,
+				51597D942224B1820028C89A /* Controllers */,
+				51597D9122249FE90028C89A /* ViewControllers */,
+				51597D8E222489400028C89A /* Models */,
 				51597D51222062B80028C89A /* AppDelegate.swift */,
-				51597D53222062B80028C89A /* ViewController.swift */,
 				51597D55222062B80028C89A /* Main.storyboard */,
 				51597D58222062BD0028C89A /* Assets.xcassets */,
 				51597D5A222062BD0028C89A /* LaunchScreen.storyboard */,
 				51597D5D222062BD0028C89A /* Info.plist */,
+				51597D8B222487260028C89A /* KokoikeModel.xcdatamodeld */,
+				51662A21222FD2C2007AFB15 /* Constants.swift */,
 			);
 			path = Kokoike;
 			sourceTree = "<group>";
@@ -125,6 +176,77 @@
 			path = KokoikeUITests;
 			sourceTree = "<group>";
 		};
+		51597D8E222489400028C89A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				51597D8F2224894C0028C89A /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		51597D9122249FE90028C89A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				51597D7F222413510028C89A /* LoginViewController.swift */,
+				51597D812224193C0028C89A /* RegisterViewController.swift */,
+				51597D53222062B80028C89A /* ViewController.swift */,
+				51597D922224A00E0028C89A /* NewLocationViewController.swift */,
+				517F579D22281C3D00C19653 /* DetailViewController.swift */,
+				517F579F2228432A00C19653 /* NewLocationDetailViewController.swift */,
+				51662A2D222FF573007AFB15 /* MapVIewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		51597D942224B1820028C89A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				51597D83222484320028C89A /* DataController.swift */,
+				517F579B22280FBF00C19653 /* API.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		51662A23222FDF85007AFB15 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				51662A26222FE096007AFB15 /* SearchResultCell.swift */,
+				51662A27222FE096007AFB15 /* SearchResultCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		51662A2A222FE422007AFB15 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				51662A2B222FE433007AFB15 /* UIImageViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7CB2FC30290601FA9E1556B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8CB86DEA1C67FB78D1BF83A /* Pods_Kokoike.framework */,
+				E5C4CB26A661750BBF42452A /* Pods_KokoikeTests.framework */,
+				4E31807D9891C1C887A3EEF7 /* Pods_KokoikeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C7F5469ADEBD112D1FCAD81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB300465589BF068560A8C7F /* Pods-Kokoike.debug.xcconfig */,
+				9811392708B05AB521F7D04E /* Pods-Kokoike.release.xcconfig */,
+				5D91D28A545943C34E64DABB /* Pods-KokoikeTests.debug.xcconfig */,
+				3321DB33E48C9232D2C451EE /* Pods-KokoikeTests.release.xcconfig */,
+				FFF569D8348461D267B0E675 /* Pods-KokoikeUITests.debug.xcconfig */,
+				F339D6CEEFEE9639F2B66F47 /* Pods-KokoikeUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51597D76222062BE0028C89A /* Build configuration list for PBXNativeTarget "Kokoike" */;
 			buildPhases = (
+				3912353CFCB77DFBC2ADE84A /* [CP] Check Pods Manifest.lock */,
 				51597D4A222062B80028C89A /* Sources */,
 				51597D4B222062B80028C89A /* Frameworks */,
 				51597D4C222062B80028C89A /* Resources */,
+				AAD6AB786368978F2A205D89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +273,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51597D79222062BE0028C89A /* Build configuration list for PBXNativeTarget "KokoikeTests" */;
 			buildPhases = (
+				4CA42BE1BD30F42A637D23C4 /* [CP] Check Pods Manifest.lock */,
 				51597D5E222062BE0028C89A /* Sources */,
 				51597D5F222062BE0028C89A /* Frameworks */,
 				51597D60222062BE0028C89A /* Resources */,
@@ -167,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51597D7C222062BE0028C89A /* Build configuration list for PBXNativeTarget "KokoikeUITests" */;
 			buildPhases = (
+				C2E546B5BD4ABE9811D6D666 /* [CP] Check Pods Manifest.lock */,
 				51597D69222062BE0028C89A /* Sources */,
 				51597D6A222062BE0028C89A /* Frameworks */,
 				51597D6B222062BE0028C89A /* Resources */,
@@ -193,6 +319,11 @@
 				TargetAttributes = {
 					51597D4D222062B80028C89A = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					51597D61222062BE0028C89A = {
 						CreatedOnToolsVersion = 10.1;
@@ -231,6 +362,7 @@
 			files = (
 				51597D5C222062BD0028C89A /* LaunchScreen.storyboard in Resources */,
 				51597D59222062BD0028C89A /* Assets.xcassets in Resources */,
+				51662A29222FE096007AFB15 /* SearchResultCell.xib in Resources */,
 				51597D57222062B80028C89A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,13 +383,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3912353CFCB77DFBC2ADE84A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kokoike-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CA42BE1BD30F42A637D23C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KokoikeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAD6AB786368978F2A205D89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kokoike/Pods-Kokoike-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kokoike/Pods-Kokoike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2E546B5BD4ABE9811D6D666 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KokoikeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		51597D4A222062B80028C89A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517F57A02228432A00C19653 /* NewLocationDetailViewController.swift in Sources */,
+				51597D84222484320028C89A /* DataController.swift in Sources */,
+				51662A2E222FF574007AFB15 /* MapVIewController.swift in Sources */,
+				51597D80222413520028C89A /* LoginViewController.swift in Sources */,
 				51597D54222062B80028C89A /* ViewController.swift in Sources */,
+				51662A28222FE096007AFB15 /* SearchResultCell.swift in Sources */,
 				51597D52222062B80028C89A /* AppDelegate.swift in Sources */,
+				51597D932224A00E0028C89A /* NewLocationViewController.swift in Sources */,
+				51597D822224193C0028C89A /* RegisterViewController.swift in Sources */,
+				51662A2C222FE433007AFB15 /* UIImageViewExtension.swift in Sources */,
+				51597D8D222487260028C89A /* KokoikeModel.xcdatamodeld in Sources */,
+				517F579E22281C3D00C19653 /* DetailViewController.swift in Sources */,
+				517F579C22280FBF00C19653 /* API.swift in Sources */,
+				51597D902224894D0028C89A /* Location.swift in Sources */,
+				51662A22222FD2C2007AFB15 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +670,7 @@
 		};
 		51597D77222062BE0028C89A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB300465589BF068560A8C7F /* Pods-Kokoike.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,12 +683,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mosin.jp.Kokoike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		51597D78222062BE0028C89A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9811392708B05AB521F7D04E /* Pods-Kokoike.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -457,15 +699,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = mosin.jp.Kokoike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		51597D7A222062BE0028C89A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D91D28A545943C34E64DABB /* Pods-KokoikeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +731,7 @@
 		};
 		51597D7B222062BE0028C89A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3321DB33E48C9232D2C451EE /* Pods-KokoikeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +753,7 @@
 		};
 		51597D7D222062BE0028C89A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFF569D8348461D267B0E675 /* Pods-KokoikeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +774,7 @@
 		};
 		51597D7E222062BE0028C89A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F339D6CEEFEE9639F2B66F47 /* Pods-KokoikeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +833,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		51597D8B222487260028C89A /* KokoikeModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				51597D8C222487260028C89A /* KokoikeModel.xcdatamodel */,
+			);
+			currentVersion = 51597D8C222487260028C89A /* KokoikeModel.xcdatamodel */;
+			path = KokoikeModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 51597D46222062B80028C89A /* Project object */;
 }
