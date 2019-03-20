@@ -28,9 +28,14 @@
 		51662A29222FE096007AFB15 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51662A27222FE096007AFB15 /* SearchResultCell.xib */; };
 		51662A2C222FE433007AFB15 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51662A2B222FE433007AFB15 /* UIImageViewExtension.swift */; };
 		51662A2E222FF574007AFB15 /* MapVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51662A2D222FF573007AFB15 /* MapVIewController.swift */; };
+		51662A30223036CF007AFB15 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51662A2F223036CF007AFB15 /* UILabelExtension.swift */; };
 		517F579C22280FBF00C19653 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F579B22280FBF00C19653 /* API.swift */; };
 		517F579E22281C3D00C19653 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F579D22281C3D00C19653 /* DetailViewController.swift */; };
 		517F57A02228432A00C19653 /* NewLocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F579F2228432A00C19653 /* NewLocationDetailViewController.swift */; };
+		51EB76CC223FA03400E41CC1 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51EB76CB223FA03400E41CC1 /* Media.xcassets */; };
+		51EB76CE223FA03400E41CC1 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EB76CD223FA03400E41CC1 /* ActionViewController.swift */; };
+		51EB76D1223FA03400E41CC1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51EB76CF223FA03400E41CC1 /* MainInterface.storyboard */; };
+		51EB76D5223FA03400E41CC1 /* KokoikeShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51EB76C9223FA03300E41CC1 /* KokoikeShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +53,28 @@
 			remoteGlobalIDString = 51597D4D222062B80028C89A;
 			remoteInfo = Kokoike;
 		};
+		51EB76D3223FA03400E41CC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51597D46222062B80028C89A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51EB76C8223FA03300E41CC1;
+			remoteInfo = KokoikeShare;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51EB7688223F6ADA00E41CC1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				51EB76D5223FA03400E41CC1 /* KokoikeShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3321DB33E48C9232D2C451EE /* Pods-KokoikeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KokoikeTests.release.xcconfig"; path = "Target Support Files/Pods-KokoikeTests/Pods-KokoikeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,9 +103,17 @@
 		51662A27222FE096007AFB15 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		51662A2B222FE433007AFB15 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		51662A2D222FF573007AFB15 /* MapVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVIewController.swift; sourceTree = "<group>"; };
+		51662A2F223036CF007AFB15 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		517F579B22280FBF00C19653 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = SOURCE_ROOT; };
 		517F579D22281C3D00C19653 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		517F579F2228432A00C19653 /* NewLocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocationDetailViewController.swift; sourceTree = "<group>"; };
+		51EB769B223F7A1900E41CC1 /* Kokoike.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kokoike.entitlements; sourceTree = "<group>"; };
+		51EB76C9223FA03300E41CC1 /* KokoikeShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KokoikeShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		51EB76CB223FA03400E41CC1 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		51EB76CD223FA03400E41CC1 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		51EB76D0223FA03400E41CC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		51EB76D2223FA03400E41CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51EB76D9223FBBF200E41CC1 /* KokoikeShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KokoikeShare.entitlements; sourceTree = "<group>"; };
 		5D91D28A545943C34E64DABB /* Pods-KokoikeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KokoikeTests.debug.xcconfig"; path = "Target Support Files/Pods-KokoikeTests/Pods-KokoikeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9811392708B05AB521F7D04E /* Pods-Kokoike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kokoike.release.xcconfig"; path = "Target Support Files/Pods-Kokoike/Pods-Kokoike.release.xcconfig"; sourceTree = "<group>"; };
 		AB300465589BF068560A8C7F /* Pods-Kokoike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kokoike.debug.xcconfig"; path = "Target Support Files/Pods-Kokoike/Pods-Kokoike.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +148,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51EB76C6223FA03300E41CC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -123,6 +164,7 @@
 				51597D50222062B80028C89A /* Kokoike */,
 				51597D65222062BE0028C89A /* KokoikeTests */,
 				51597D70222062BE0028C89A /* KokoikeUITests */,
+				51EB76CA223FA03300E41CC1 /* KokoikeShare */,
 				51597D4F222062B80028C89A /* Products */,
 				9C7F5469ADEBD112D1FCAD81 /* Pods */,
 				7CB2FC30290601FA9E1556B9 /* Frameworks */,
@@ -135,6 +177,7 @@
 				51597D4E222062B80028C89A /* Kokoike.app */,
 				51597D62222062BE0028C89A /* KokoikeTests.xctest */,
 				51597D6D222062BE0028C89A /* KokoikeUITests.xctest */,
+				51EB76C9223FA03300E41CC1 /* KokoikeShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +185,7 @@
 		51597D50222062B80028C89A /* Kokoike */ = {
 			isa = PBXGroup;
 			children = (
+				51EB769B223F7A1900E41CC1 /* Kokoike.entitlements */,
 				51662A2A222FE422007AFB15 /* Extensions */,
 				51662A23222FDF85007AFB15 /* Cells */,
 				51597D942224B1820028C89A /* Controllers */,
@@ -220,8 +264,21 @@
 			isa = PBXGroup;
 			children = (
 				51662A2B222FE433007AFB15 /* UIImageViewExtension.swift */,
+				51662A2F223036CF007AFB15 /* UILabelExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		51EB76CA223FA03300E41CC1 /* KokoikeShare */ = {
+			isa = PBXGroup;
+			children = (
+				51EB76D9223FBBF200E41CC1 /* KokoikeShare.entitlements */,
+				51EB76CB223FA03400E41CC1 /* Media.xcassets */,
+				51EB76CD223FA03400E41CC1 /* ActionViewController.swift */,
+				51EB76CF223FA03400E41CC1 /* MainInterface.storyboard */,
+				51EB76D2223FA03400E41CC1 /* Info.plist */,
+			);
+			path = KokoikeShare;
 			sourceTree = "<group>";
 		};
 		7CB2FC30290601FA9E1556B9 /* Frameworks */ = {
@@ -259,10 +316,12 @@
 				51597D4B222062B80028C89A /* Frameworks */,
 				51597D4C222062B80028C89A /* Resources */,
 				AAD6AB786368978F2A205D89 /* [CP] Embed Pods Frameworks */,
+				51EB7688223F6ADA00E41CC1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				51EB76D4223FA03400E41CC1 /* PBXTargetDependency */,
 			);
 			name = Kokoike;
 			productName = Kokoike;
@@ -307,6 +366,23 @@
 			productReference = 51597D6D222062BE0028C89A /* KokoikeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		51EB76C8223FA03300E41CC1 /* KokoikeShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51EB76D6223FA03400E41CC1 /* Build configuration list for PBXNativeTarget "KokoikeShare" */;
+			buildPhases = (
+				51EB76C5223FA03300E41CC1 /* Sources */,
+				51EB76C6223FA03300E41CC1 /* Frameworks */,
+				51EB76C7223FA03300E41CC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KokoikeShare;
+			productName = KokoikeShare;
+			productReference = 51EB76C9223FA03300E41CC1 /* KokoikeShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -320,7 +396,13 @@
 					51597D4D222062B80028C89A = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
 								enabled = 1;
 							};
 						};
@@ -332,6 +414,17 @@
 					51597D6C222062BE0028C89A = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 51597D4D222062B80028C89A;
+					};
+					51EB76C8223FA03300E41CC1 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -351,6 +444,7 @@
 				51597D4D222062B80028C89A /* Kokoike */,
 				51597D61222062BE0028C89A /* KokoikeTests */,
 				51597D6C222062BE0028C89A /* KokoikeUITests */,
+				51EB76C8223FA03300E41CC1 /* KokoikeShare */,
 			);
 		};
 /* End PBXProject section */
@@ -378,6 +472,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51EB76C7223FA03300E41CC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51EB76CC223FA03400E41CC1 /* Media.xcassets in Resources */,
+				51EB76D1223FA03400E41CC1 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +598,7 @@
 				51662A2C222FE433007AFB15 /* UIImageViewExtension.swift in Sources */,
 				51597D8D222487260028C89A /* KokoikeModel.xcdatamodeld in Sources */,
 				517F579E22281C3D00C19653 /* DetailViewController.swift in Sources */,
+				51662A30223036CF007AFB15 /* UILabelExtension.swift in Sources */,
 				517F579C22280FBF00C19653 /* API.swift in Sources */,
 				51597D902224894D0028C89A /* Location.swift in Sources */,
 				51662A22222FD2C2007AFB15 /* Constants.swift in Sources */,
@@ -517,6 +621,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51EB76C5223FA03300E41CC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51EB76CE223FA03400E41CC1 /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -529,6 +641,11 @@
 			isa = PBXTargetDependency;
 			target = 51597D4D222062B80028C89A /* Kokoike */;
 			targetProxy = 51597D6E222062BE0028C89A /* PBXContainerItemProxy */;
+		};
+		51EB76D4223FA03400E41CC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51EB76C8223FA03300E41CC1 /* KokoikeShare */;
+			targetProxy = 51EB76D3223FA03400E41CC1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -547,6 +664,14 @@
 				51597D5B222062BD0028C89A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		51EB76CF223FA03400E41CC1 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51EB76D0223FA03400E41CC1 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -672,7 +797,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB300465589BF068560A8C7F /* Pods-Kokoike.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kokoike/Kokoike.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B826USK72A;
 				INFOPLIST_FILE = Kokoike/Info.plist;
@@ -691,7 +818,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9811392708B05AB521F7D04E /* Pods-Kokoike.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kokoike/Kokoike.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B826USK72A;
 				INFOPLIST_FILE = Kokoike/Info.plist;
@@ -793,6 +922,46 @@
 			};
 			name = Release;
 		};
+		51EB76D7223FA03400E41CC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KokoikeShare/KokoikeShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B826USK72A;
+				INFOPLIST_FILE = KokoikeShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mosin.jp.Kokoike.KokoikeShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51EB76D8223FA03400E41CC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KokoikeShare/KokoikeShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B826USK72A;
+				INFOPLIST_FILE = KokoikeShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mosin.jp.Kokoike.KokoikeShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -828,6 +997,15 @@
 			buildConfigurations = (
 				51597D7D222062BE0028C89A /* Debug */,
 				51597D7E222062BE0028C89A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51EB76D6223FA03400E41CC1 /* Build configuration list for PBXNativeTarget "KokoikeShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51EB76D7223FA03400E41CC1 /* Debug */,
+				51EB76D8223FA03400E41CC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

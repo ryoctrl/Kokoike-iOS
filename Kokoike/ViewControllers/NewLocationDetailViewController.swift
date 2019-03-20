@@ -71,13 +71,9 @@ class NewLocationDetailViewController: UIViewController, UITextFieldDelegate {
         
         textView.attributedText = attributedString
         
-        nameLabel.numberOfLines = 0
-        nameLabel.sizeToFit()
-        nameLabel.lineBreakMode = .byWordWrapping
+        nameLabel.fitAndLineBreak()
         
-        addressLabel.numberOfLines = 0
-        addressLabel.sizeToFit()
-        addressLabel.lineBreakMode = .byWordWrapping
+        addressLabel.fitAndLineBreak()
         
         var labelFrame = nameLabel.frame
         for view in displayLabels {

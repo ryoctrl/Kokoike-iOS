@@ -14,25 +14,25 @@ class SearchResultCell: UITableViewCell {
     
     @IBOutlet weak var sumbnailImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
     
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//        // Initialization code
+//    }
+//
+//    override func setSelected(_ selected: Bool, animated: Bool) {
+//        super.setSelected(selected, animated: animated)
+//
+//        // Configure the view for the selected state
+//    }
     
     func displayShop(_ shopJSON: JSON) {
-        print(shopJSON)
         nameLabel.text = shopJSON[Constants.GNAVI_RESPONSE.NAME].stringValue
+        nameLabel.fitAndLineBreak()
+        addressLabel.text = shopJSON[Constants.GNAVI_RESPONSE.ADDRESS].stringValue
+        addressLabel.fitAndLineBreak()
         sumbnailImage.displayFromURL(shopJSON[Constants.GNAVI_RESPONSE.IMAGE_URLS][Constants.GNAVI_RESPONSE.IMAGE_URL1].stringValue)
     }
-    
-    
-    
 }

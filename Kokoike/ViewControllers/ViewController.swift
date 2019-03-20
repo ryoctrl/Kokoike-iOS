@@ -68,6 +68,25 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDe
         tableViewInit()
         
         updateLocations()
+        
+        checkSharedFromTwitter()
+    }
+    
+    let suiteName: String = "group.mosin.jp.Kokoike"
+    let keyName: String = "sharedFromTwitter"
+    
+    func checkSharedFromTwitter() {
+        let sharedDefaults: UserDefaults = UserDefaults(suiteName: self.suiteName)!
+        if let url = sharedDefaults.object(forKey: self.keyName) as? String {
+            print("url is exist")
+            print(url)
+            // Safari を起動してそのURLに飛ぶ
+            UIApplication.shared.open(URL(string: url)!)
+            // データの削除
+            sharedDefaults.removeObject(forKey: self.keyName)
+        } else {
+            print(" url is not exits!")
+        }
     }
     
     func tableViewInit() {
@@ -145,7 +164,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITableViewDe
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         return [
             UITableViewRowAction(style: .default, title: "Delete", handler: { (action, indexPath) in
-                self.locations.remove(at: indexPath.row)
+                let deletedLocation: Location = self.locations.remove(at: indexPath.row)
+                API.sharedInstance.deleteLocation(location: deletedLocation, completion: { json in
+                    let status = json["status"].intValue
+                    if status != 200 {
+                        print(json["message"].stringValue)
+                        return
+                    }
+                    self.dataController.deleteLocation(deletedLocation)
+                    print(json)
+                })
                 tableView.deleteRows(at: [indexPath], with: .automatic)
             })
         ]

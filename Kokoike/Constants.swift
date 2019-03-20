@@ -20,6 +20,7 @@ class Constants {
     
     class GNAVI_RESPONSE {
         static let NAME = "name"
+        static let ADDRESS = "address"
         static let IMAGE_URLS = "image_url"
         static let IMAGE_URL1 = "shop_image1"
         static let IMAGE_URL2 = "shop_image2"
@@ -35,6 +36,10 @@ class Constants {
     
     class LOCATION_KEYS {
         
+    }
+    
+    class STRINGS {
+        static let SEARCH_TITLE = "新規店舗 - 検索"
     }
     
 }

@@ -71,6 +71,10 @@ class DataController: NSObject {
     }
     
     func fetchLocations() -> [Location] {
+        func completion(json: JSON) -> Void {
+            print(json)
+        }
+        API.sharedInstance.getLocations(completion: completion)
         let context = persistentContainer.viewContext
         let locationsFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Location")
 
@@ -81,6 +85,23 @@ class DataController: NSObject {
             fatalError("Failed to fetch locations: \(error)")
         }
         return []
+    }
+    
+    func deleteLocation(_ deleteLocation: Location) {
+        let context = persistentContainer.viewContext
+        let deleteRequest: NSFetchRequest<Location> = Location.fetchRequest()
+        deleteRequest.predicate = NSPredicate.init(format: "idl==\(deleteLocation.id)")
+        
+        do {
+            let objects = try context.fetch(deleteRequest)
+            for object in objects {
+                context.delete(object)
+            }
+            saveContext()
+            print("deleted location")
+        } catch {
+            fatalError("Failed to fetch locations: \(error)")
+        }
     }
     
     func registerNewLocation(name: String, address: String?, tel: String?, comment: String?, url: String?, imageURL: String?, lat: Float,lon: Float) {
